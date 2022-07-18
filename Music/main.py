@@ -39,7 +39,7 @@ def download_youtube_mp3_from_video_id(id):
     song_title = re.sub('\W+',' ', song_title_raw).lower().strip()
     song_path = f"{song_title}"
 
-    download_path = f"saved_mp3s/{song_path}"
+    download_path = f"download/{song_path}"
     out_file = video.download(download_path)
 
     # save the file (which will be mp4 format)
